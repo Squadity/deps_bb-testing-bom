@@ -1,0 +1,169 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>bb-testing-bom</artifactId>
+	<packaging>pom</packaging>
+	<version>0.1-SNAPSHOT</version>
+	<name>BB - DEPs BoMs - Testing Dependencies</name>
+	<description>BB - Dependencies BoMs - Testing Dependencies BoM</description>
+
+	<parent>
+		<groupId>net.bolbat</groupId>
+		<artifactId>bb-parent</artifactId>
+		<version>15</version>
+	</parent>
+
+	<properties>
+		<!-- Testing dependencies -->
+		<hamcrest-2x.version>2.1</hamcrest-2x.version>
+
+		<junit.version>4.12</junit.version>
+		<junit-platform.version>1.4.1</junit-platform.version>
+		<junit-jupiter.version>5.4.1</junit-jupiter.version>
+		<junit-vintage.version>${junit-jupiter.version}</junit-vintage.version>
+		<apiguardian-api.version>1.0.0</apiguardian-api.version> <!-- To avoid compiler warnings about @API annotations in JUnit code -->
+		<org-opentest4j.version>1.1.1</org-opentest4j.version> <!-- To avoid compiler warnings about @API annotations in JUnit code -->
+
+		<mockito.version>2.27.0</mockito.version>
+		<powermock.version>2.0.2</powermock.version>
+
+		<awaitility.version>3.1.6</awaitility.version>
+
+		<equalsverifier.version>3.1.8</equalsverifier.version>
+
+		<jmh.version>1.21</jmh.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- Testing dependencies -->
+			<dependency>
+				<groupId>org.hamcrest</groupId>
+				<artifactId>hamcrest</artifactId>
+				<version>${hamcrest-2x.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.hamcrest</groupId>
+				<artifactId>hamcrest-core</artifactId>
+				<version>${hamcrest-2x.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.hamcrest</groupId>
+				<artifactId>hamcrest-library</artifactId>
+				<version>${hamcrest-2x.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.junit.platform</groupId>
+				<artifactId>junit-platform-launcher</artifactId>
+				<version>${junit-platform.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.junit.jupiter</groupId>
+				<artifactId>junit-jupiter-api</artifactId>
+				<version>${junit-jupiter.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.junit.jupiter</groupId>
+				<artifactId>junit-jupiter-engine</artifactId>
+				<version>${junit-jupiter.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.junit.vintage</groupId>
+				<artifactId>junit-vintage-engine</artifactId>
+				<version>${junit-vintage.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency> <!-- To avoid compiler warnings about @API annotations in JUnit code -->
+				<groupId>org.apiguardian</groupId>
+				<artifactId>apiguardian-api</artifactId>
+				<version>${apiguardian-api.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.opentest4j</groupId>
+				<artifactId>opentest4j</artifactId>
+				<version>${org-opentest4j.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-core</artifactId>
+				<version>${mockito.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-junit-jupiter</artifactId>
+				<version>${mockito.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.powermock</groupId>
+				<artifactId>powermock-module-junit4</artifactId>
+				<version>${powermock.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.powermock</groupId>
+				<artifactId>powermock-api-mockito2</artifactId>
+				<version>${powermock.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.awaitility</groupId>
+				<artifactId>awaitility</artifactId>
+				<version>${awaitility.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.awaitility</groupId>
+				<artifactId>awaitility-proxy</artifactId>
+				<version>${awaitility.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>nl.jqno.equalsverifier</groupId>
+				<artifactId>equalsverifier</artifactId>
+				<version>${equalsverifier.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.openjdk.jmh</groupId>
+				<artifactId>jmh-core</artifactId>
+				<version>${jmh.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.openjdk.jmh</groupId>
+				<artifactId>jmh-generator-annprocess</artifactId>
+				<version>${jmh.version}</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<scm>
+		<connection>scm:git:ssh://git@bitbucket.infra.bolbat.net:9074/BBDEPSBOMS/bb-testing-bom.git</connection>
+		<developerConnection>scm:git:ssh://git@bitbucket.infra.bolbat.net:9074/BBDEPSBOMS/bb-testing-bom.git</developerConnection>
+		<url>http://bitbucket.infra.bolbat.net/scm/BBDEPSBOMS/bb-testing-bom.git</url>
+		<tag>HEAD</tag>
+	</scm>
+
+</project>
