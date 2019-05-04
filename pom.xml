@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>bb-testing-bom</artifactId>
 	<packaging>pom</packaging>
-	<version>0.1</version>
+	<version>0.2-SNAPSHOT</version>
 	<name>BB - DEPs BoMs - Testing Dependencies</name>
 	<description>BB - Dependencies BoMs - Testing Dependencies BoM</description>
 
@@ -162,7 +162,7 @@
 		<connection>scm:git:ssh://git@bitbucket.infra.bolbat.net:9074/BBDEPSBOMS/bb-testing-bom.git</connection>
 		<developerConnection>scm:git:ssh://git@bitbucket.infra.bolbat.net:9074/BBDEPSBOMS/bb-testing-bom.git</developerConnection>
 		<url>http://bitbucket.infra.bolbat.net/scm/BBDEPSBOMS/bb-testing-bom.git</url>
-		<tag>bb-testing-bom-0.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 </project>
