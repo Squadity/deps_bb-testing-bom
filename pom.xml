@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>bb-testing-bom</artifactId>
 	<packaging>pom</packaging>
@@ -9,7 +10,7 @@
 	<parent>
 		<groupId>net.bolbat</groupId>
 		<artifactId>bb-parent</artifactId>
-		<version>15</version>
+		<version>16-SNAPSHOT</version>
 	</parent>
 
 	<properties>
@@ -159,10 +160,9 @@
 	</dependencyManagement>
 
 	<scm>
-		<connection>scm:git:ssh://git@bitbucket.infra.bolbat.net:9074/BBDEPSBOMS/bb-testing-bom.git</connection>
-		<developerConnection>scm:git:ssh://git@bitbucket.infra.bolbat.net:9074/BBDEPSBOMS/bb-testing-bom.git</developerConnection>
-		<url>http://bitbucket.infra.bolbat.net/scm/BBDEPSBOMS/bb-testing-bom.git</url>
-		<tag>HEAD</tag>
+		<connection>scm:git:ssh://git@code.solutionary.tech:9074/bb/bb-bom-testing.git</connection>
+		<developerConnection>scm:git:ssh://git@code.solutionary.tech:9074/bb/bb-bom-testing.git</developerConnection>
+		<url>https://code.solutionary.tech/projects/BB/repos/bb-bom-testing/</url>
 	</scm>
 
 </project>
