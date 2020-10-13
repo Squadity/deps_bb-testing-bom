@@ -15,23 +15,23 @@
 
 	<properties>
 		<!-- Testing dependencies -->
-		<hamcrest-2x.version>2.1</hamcrest-2x.version>
+		<hamcrest-2x.version>2.2</hamcrest-2x.version>
 
-		<junit.version>4.12</junit.version>
-		<junit-platform.version>1.4.1</junit-platform.version>
-		<junit-jupiter.version>5.4.1</junit-jupiter.version>
+		<junit.version>4.13.1</junit.version>
+		<junit-platform.version>1.7.0</junit-platform.version>
+		<junit-jupiter.version>5.7.0</junit-jupiter.version>
 		<junit-vintage.version>${junit-jupiter.version}</junit-vintage.version>
-		<apiguardian-api.version>1.0.0</apiguardian-api.version> <!-- To avoid compiler warnings about @API annotations in JUnit code -->
-		<org-opentest4j.version>1.1.1</org-opentest4j.version> <!-- To avoid compiler warnings about @API annotations in JUnit code -->
+		<apiguardian-api.version>1.1.0</apiguardian-api.version> <!-- To avoid compiler warnings about @API annotations in JUnit code -->
+		<org-opentest4j.version>1.2.0</org-opentest4j.version> <!-- To avoid compiler warnings about @API annotations in JUnit code -->
 
-		<mockito.version>2.27.0</mockito.version>
-		<powermock.version>2.0.2</powermock.version>
+		<mockito.version>2.28.2</mockito.version>
+		<powermock.version>2.0.7</powermock.version>
 
 		<awaitility.version>3.1.6</awaitility.version>
 
-		<equalsverifier.version>3.1.8</equalsverifier.version>
+		<equalsverifier.version>4.0.3</equalsverifier.version>
 
-		<jmh.version>1.21</jmh.version>
+		<jmh.version>1.26</jmh.version>
 	</properties>
 
 	<dependencyManagement>
